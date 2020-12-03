@@ -1,0 +1,20 @@
+Preface:
+This is for tomorrow, as I am very tired and have a whole day to work through 
+a decent amount of these homeworks as I am currently speedrunning them with 4 hours of sleep 
+
+
+Essentially you are just making a server to hold on all the info being taken down in the Notes app
+so make a server.js file
+
+Resources:
+
+Zoom Recordings 
+Introduction to Node Servers & Express Yourself
+https://zoom.us/rec/play/-un_1rVK3QLqfjkgAKQwYJI5jeTkGt_-_W0S_BEZaOdcGj9IwIStQCBlDkp18F6tuH3pG4cab65OFPY1.XoryqqpEFT_OjUkB
+
+Express Yourself
+https://zoom.us/rec/play/vzdrROGS9SBDZlNSt1nAV7fqfztFa00GX8TZqwJlGTAwILVf7UhP0ebH_3Y0fTFrJHjwv67UjsimAIlg.s8x52Uz3YvmW6CFc
+
+Node, the SQL
+https://zoom.us/rec/play/TqB9PwyBqgCshrdIzk17kbyvzLMIHVyuHkdGUCehNR3TKRExR8wKWbjt23wfJlagOGgYZ_WTcEXE1KGv.7NwUqhYOhXRiZCAw
+
