@@ -5,9 +5,9 @@
 
 // dependencies
 const express = require("express");
-const path = require("path");
 const apiRoutes = require("./routes/apiRoutes");
 const htmlRoutes = require("./routes/htmlRoutes");
+const path = require("path");
 
 // express data stuff (its parsing, just in case)
 // https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes
@@ -28,5 +28,5 @@ const PORT = process.env.PORT || 8080;
 
 
 app.listen(PORT, function () {
-    console.log(`PORT ${PORT} watching your every step`);
+    console.log(`PORT ${PORT} is watching your every step`);
 });
