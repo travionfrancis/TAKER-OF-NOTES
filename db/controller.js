@@ -66,3 +66,4 @@ class Store {
 }
 
 module.exports = new Store();
+// apparently all this wouldnt work without this controller.js file
