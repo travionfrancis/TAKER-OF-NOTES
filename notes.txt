@@ -8,6 +8,10 @@ so make a server.js file
 
 Resources:
 
+
+https://serverjs.io/
+https://serverjs.io/tutorials/getting-started/
+
 Zoom Recordings 
 Introduction to Node Servers & Express Yourself
 https://zoom.us/rec/play/-un_1rVK3QLqfjkgAKQwYJI5jeTkGt_-_W0S_BEZaOdcGj9IwIStQCBlDkp18F6tuH3pG4cab65OFPY1.XoryqqpEFT_OjUkB
