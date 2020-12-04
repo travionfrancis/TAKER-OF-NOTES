@@ -20,8 +20,8 @@ app.use(express.json());
 app.use(express.static(path.join(_dirname, 'public')));
 
 // linking above-said routes
-require("./routes/htmlRoutes")(app);
-require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes.js")(app);
+require("./routes/apiRoutes.js")(app);
 
 app.listen(PORT, function () {
     console.log(`PORT ${PORT} watching your every step`);
