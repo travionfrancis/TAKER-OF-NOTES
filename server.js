@@ -18,3 +18,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static(path.join(_dirname, 'public')));
+
+// linking above-said routes
+require("./routes/htmlRoutes")(app);
+require("./routes/apiRoutes")(app);
+
+app.listen(PORT, function () {
+    console.log(`PORT ${PORT} watching your every step`);
+})
