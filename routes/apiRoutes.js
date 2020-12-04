@@ -5,14 +5,14 @@ const store = require("../db/controller.js");
 
 // API routes
 
-router.get("./public/notes.html", function (req, res) {
+router.get("./notes.html", function (req, res) {
   store
     .getNotes()
     .then((notes) => res.json(notes))
     .catch((err) => res.status(500).json(err));
 });
 // Post
-router.post("./public/notes.html", (req, res) => {
+router.post("./notes.html", (req, res) => {
   store
     .addNote(req.body)
     .then((note) => res.json(note))
@@ -20,7 +20,7 @@ router.post("./public/notes.html", (req, res) => {
 });
 
 // Deleting
-router.delete("./public/notes.html/:id", function (req, res) {
+router.delete("./notes.html/:id", function (req, res) {
   store
     .removeNote(req.params.id)
     .then(() => res.json({ ok: true }))
