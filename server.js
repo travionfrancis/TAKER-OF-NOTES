@@ -7,8 +7,8 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const apiRoutes = require("./routes/apiRoutes");
-const htmlRoutes = require("./routes/htmlRoutes");
+const apiRoutes = require("./routes/apiRoutes.js");
+const htmlRoutes = require("./routes/htmlRoutes.js");
 // SERVER PORT PLEASE REMEMBER
 const PORT = process.env.PORT || 8080;
 
