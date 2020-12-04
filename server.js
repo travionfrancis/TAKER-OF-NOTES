@@ -1,3 +1,3 @@
 // Pseudocode
 // preemptive file
-// work on this tomorrow
+// The Heroku Guide should help
