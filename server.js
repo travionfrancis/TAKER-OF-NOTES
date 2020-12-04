@@ -6,21 +6,20 @@
 // dependencies
 const express = require("express");
 const path = require("path");
-const apiRoutes = require("./routes/apiRoutes.js");
-const htmlRoutes = require("./routes/htmlRoutes.js");
+const apiRoutes = require("./routes/apiRoutes");
+const htmlRoutes = require("./routes/htmlRoutes");
 
 // express data stuff (its parsing, just in case)
 // https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes
 const app = express();
-app.use(express.static(path.join(_dirname, 'public')));
+app.use(express.static(path.join(__dirname, "/public")));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-
 // linking above-said routes
-require("./routes/htmlRoutes.js")(app);
-require("./routes/apiRoutes.js")(app);
+app.use("/api", apiRoutes);
+app.use("/", htmlRoutes);
 
 module.exports = app;
 
