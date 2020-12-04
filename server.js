@@ -5,24 +5,29 @@
 
 // dependencies
 const express = require("express");
-const app = express();
 const path = require("path");
 const apiRoutes = require("./routes/apiRoutes.js");
 const htmlRoutes = require("./routes/htmlRoutes.js");
-// SERVER PORT PLEASE REMEMBER
-const PORT = process.env.PORT || 8080;
 
 // express data stuff (its parsing, just in case)
 // https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes
+const app = express();
+app.use(express.static(path.join(_dirname, 'public')));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static(path.join(_dirname, 'public')));
 
 // linking above-said routes
 require("./routes/htmlRoutes.js")(app);
 require("./routes/apiRoutes.js")(app);
 
+module.exports = app;
+
+// SERVER PORT PLEASE REMEMBER
+const PORT = process.env.PORT || 8080;
+
+
 app.listen(PORT, function () {
     console.log(`PORT ${PORT} watching your every step`);
-})
+});
